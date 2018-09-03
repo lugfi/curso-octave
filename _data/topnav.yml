@@ -4,29 +4,27 @@ topnav:
 - title: Topnav
   items:
     - title: GitHub
-      external_url: https://github.com/tomjoht/documentation-theme-jekyll
-    - title: News
+      external_url: https://github.com/lugfi/curso-octave
+    - title: Noticias
       url: /news
 
 #Topnav dropdowns
 topnav_dropdowns:
 - title: Topnav dropdowns
   folders:
-    - title: Jekyll Help
+    - title: Links
       folderitems:
-        - title: Jekyll Talk
-          external_url: https://talk.jekyllrb.com
-        - title: Jekyll documentation
-          external_url: http://jekyllrb.com/docs/home/
-        - title: Jekyll on Stack Overflow
-          external_url: http://stackoverflow.com/questions/tagged/jekyll
-        - title: Jekyll on my blog
-          external_url: http://idratherbewriting.com/category-jekyll/
-    - title: Products
+        - title: Descargar GNU Octave
+          external_url: https://www.gnu.org/software/octave/
+        - title: LUGFi
+          external_url: https://lugfi.github.io/acerca/
+        - title: Cursos del LABi
+          external_url: http://labi.fi.uba.ar/labi/cursos
+    - title: Información
       folderitems:
-        - title: Jekyll Documentation Theme
-          url: /mydoc_introduction.html
-        - title: Product 1
-          url: /p1_landing_page.html
-        - title: Product 2
-          url: /p2_landing_page.html
+        - title: Curso Práctico de GNU/Octave
+          url: /index.html
+        - title: Aplicaciones en Ingeniería
+          url: /aplicaciones_home.html
+        - title: Documentación y Notas
+          url: /doc_home.html

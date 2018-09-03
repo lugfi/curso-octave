@@ -1,0 +1,35 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: Aplicaciones en Ingeniería
+  version: 1.0
+  folders:
+
+  - title: Simulación
+    output: web, pdf
+    folderitems:
+
+    - title: Reactores
+      url: /reactores.html
+      output: web, pdf
+      type: homepage
+      
+    - title: Probabilidad y Estadística
+      url: /proba.html
+      output: web, pdf
+      type: homepage
+
+  - title: Filtrado de Datos
+    output: web, pdf
+    folderitems:
+
+    - title: Bla
+      url: /bla.html
+      output: web, pdf
+      type: homepage
+
+    - title: Bla bla
+      url: /blabla.html
+      output: web, pdf
+      

@@ -1,0 +1,52 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: Curso Práctico GNU/Octave
+  version: 1.0
+  folders:
+
+  - title: Generalidades
+    output: web, pdf
+    folderitems:
+
+  - title: Graficos Avanzados
+    output: web
+    folderitems:
+
+    - title: Graficos dinámicos
+      url: /mydoc_tag_archives_overview.html
+      output: web
+
+      subfolders:
+      - title: Tipos de Gráficos
+        output: web
+        subfolderitems:
+
+        - title: Curvas
+          url: /tag_formatting.html
+          output: web
+
+        - title: Dispersión XY
+          url: /plot_dispersion.html
+          output: web
+
+        - title: Barras
+          url: /tag_content_types.html
+          output: web
+
+        - title: Torta
+          url: /tag_publishing.html
+          output: web
+
+        - title: Pareto
+          url: /tag_special_layouts.html
+          output: web
+
+        - title: Polar
+          url: /tag_collaboration.html
+          output: web
+
+        - title: Polar en dB
+          url: /tag_troubleshooting.html
+          output: web

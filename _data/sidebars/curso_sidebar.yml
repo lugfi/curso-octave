@@ -1,0 +1,41 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: Curso Práctico GNU/Octave
+  version: 1.0
+  folders:
+
+  - title: Generalidades
+    output: web, pdf
+    folderitems:
+
+    - title: Introducción
+      url: /index.html
+      output: web, pdf
+      type: homepage
+
+    - title: Instalación
+      url: /mydoc_introduction.html
+      output: web, pdf
+
+    - title: Interfaz Gráfica
+      url: /mydoc_supported_features.html
+      output: web, pdf
+
+    - title: Modo linea de comandos
+      url: /mydoc_about.html
+      output: web, pdf
+
+  - title: Sistemas de Ecuaciones
+    output: web, pdf
+    folderitems:
+
+    - title: Bla
+      url: /bla.html
+      output: web, pdf
+      type: homepage
+
+    - title: Bla bla
+      url: /blabla.html
+      output: web, pdf
