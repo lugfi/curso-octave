@@ -85,3 +85,22 @@ entries:
     - title: Elementos Finitos
       url: /curso_edo_elementos_finitos.html
       output: web, pdf
+          
+  - title: Aplicaciones en Ingeniería
+    output: web, pdf
+    folderitems:
+
+    - title: Ver aplicaciones
+      url: /aplicaciones_home.html
+      output: web, pdf
+      type: homepage
+    
+  - title: Documentación y Notas
+    output: web, pdf
+    folderitems:
+
+    - title: Ver Documentación y Notas
+      url: /doc_home.html
+      output: web, pdf
+      type: homepage
+    

@@ -5,7 +5,7 @@ topnav:
   items:
     - title: GitHub
       external_url: https://github.com/lugfi/curso-octave
-    - title: Noticias
+    - title: Novedades
       url: /news
 
 #Topnav dropdowns
@@ -20,7 +20,7 @@ topnav_dropdowns:
           external_url: https://lugfi.github.io/acerca/
         - title: Cursos del LABi
           external_url: http://labi.fi.uba.ar/labi/cursos
-    - title: Información
+    - title: Secciones
       folderitems:
         - title: Curso Práctico de GNU/Octave
           url: /index.html
