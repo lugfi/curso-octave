@@ -2,11 +2,11 @@
 
 entries:
 - title: sidebar
-  product: Curso Práctico GNU/Octave
+  product: Tutorial de Octave
   version: 1.0
   folders:
 
-  - title: Generalidades
+  - title: Primeros Pasos
     output: web, pdf
     folderitems:
 
@@ -16,26 +16,72 @@ entries:
       type: homepage
 
     - title: Instalación
-      url: /mydoc_introduction.html
+      url: /curso_instalacion.html
       output: web, pdf
 
     - title: Interfaz Gráfica
-      url: /mydoc_supported_features.html
+      url: /curso_gui.html
       output: web, pdf
-
-    - title: Modo linea de comandos
-      url: /mydoc_about.html
+    
+    - title: Variables, Vectores y Matrices
+      url: /curso_matrices.html
       output: web, pdf
-
+      
+    - title: Gráficos
+      url: /curso_plots_inicial.html
+      output: web, pdf
+      
   - title: Sistemas de Ecuaciones
     output: web, pdf
     folderitems:
 
-    - title: Bla
-      url: /bla.html
+    - title: Ecuaciones Lineales
+      url: /curso_sistemas_lineales.html
       output: web, pdf
       type: homepage
 
-    - title: Bla bla
-      url: /blabla.html
+    - title: Ecuaciones No Lineales
+      url: /curso_ecuaciones_no_lineales.html
+      output: web, pdf
+
+    - title: (Aplicación) Regresión
+      url: /curso_regresion_lineal.html
+      output: web, pdf
+      
+    - title: Ecuaciones No Lineales
+      url: /curso_ecuaciones_no_lineales.html
+      output: web, pdf
+    
+  - title: Ajuste
+    output: web, pdf
+    folderitems:
+
+    - title: (Introducción) Cuadrados Mínimos
+      url: /curso_cuadrados_minimos.html
+      output: web, pdf
+      type: homepage
+
+    - title: Ajuste No Lineal
+      url: /curso_ajuste_no_lineal.html
+      output: web, pdf
+
+    - title: Regularización
+      url: /curso_ajuste_regularizacion.html
+      output: web, pdf
+      
+  - title: Ecuaciones Diferenciales
+    output: web, pdf
+    folderitems:
+
+    - title: (Introducción) Euler
+      url: /curso_ode_introduccion.html
+      output: web, pdf
+      type: homepage
+
+    - title: Resolución sEDO con ode45
+      url: /curso_edo_ode45.html
+      output: web, pdf
+
+    - title: Elementos Finitos
+      url: /curso_edo_elementos_finitos.html
       output: web, pdf
