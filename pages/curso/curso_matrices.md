@@ -355,7 +355,7 @@ no voy a andar escribiendo vectores enormes... ¿no?
 Por suerte no. Para ello se utilizan los rangos, que es una forma de decirle
 a octave que nos de un vector consecutivo, así no escribimos tanto.
 
-La sintaxis es: ``inicio:paso:fin``. Prueben estos ejemplos:
+La sintaxis es: ``inicio:fin`` o bien ``inicio:paso:fin``. Prueben estos ejemplos:
 
 ```
 1:3     # Resultado: [1 2 3]
@@ -368,7 +368,7 @@ La sintaxis es: ``inicio:paso:fin``. Prueben estos ejemplos:
 Por lo tanto, podemos escribir el ejemplo anterior como
 
 ```
-# A(4:-1:1, 1:3)
+A(4:-1:1, 1:3)
 ```
 
 Para obtener **todas** las filas o columnas, no es necesario poner ``1:3``,
@@ -376,7 +376,7 @@ basta con poner ``:`` y Octave va a interpretar que queremos todas las filas
 o columnas. El ejemplo anterior es mejor así:
 
 ```
-# A(4:-1:1, :)
+A(4:-1:1, :)
 ```
 
 Por otro lado, todas las matrices empiezan por el elemento ``1``, eso es claro,
@@ -385,7 +385,7 @@ independizarnos de la cantidad de elementos de la matriz. Por ejemplo,
 en el caso anterior quedaría:
 
 ```
-# A(end:-1:1, :) # Much clear, so Octave, wow
+A(end:-1:1, :) # Much clear, so Octave, wow
 ```
 
 Pero también podemos hacer cosas como:
