@@ -313,4 +313,110 @@ M3 = inv(M2)
 Que va a coincidir con ``M2.'`` pues es ortogonal. Podemos verificar
 que al hacer ``det(M2)`` el determinante es 1.
 
+## Submatrices
+Se pueden obtener pedacitos de una matriz fácilmente. Trabajemos con esta
+de ejemplo:
+
+```
+A = [ 17   11   71
+      41   60    3
+      85   24   58
+      44   96   22 ];
+```
+
+El elemento en la fila ``i``, columna ``j`` se obtiene haciendo ``A(i,j)``.
+Es decir, en este caso, ``A(1,1)`` es 17, ``A(3,2)`` es 24, etc.
+
+Por otro lado, para indicar rangos de filas o columnas, se utilizan vectores
+en las componentes, por ejemplo:
+
+```
+A(1,[1 3]) # Fila 1, Columnas 1 y 3
+A([2 3],[3 1]) # Filas 2 y 3, Columnas 3 y 1 en ese orden
+```
+
+Incluso podemos invertir el orden de una matriz, por ejemplo:
+
+```
+A([4 3 2 1], [1 2 3])
+# Resultado
+#   44   96   22
+#   85   24   58
+#   41   60    3
+#   17   11   71
+```
+
+Y cualquier combinación que se nos ocurra.
+
+### Rangos
+Es claro que se necesita una forma más cómoda para especificar las columnas,
+no voy a andar escribiendo vectores enormes... ¿no?
+
+Por suerte no. Para ello se utilizan los rangos, que es una forma de decirle
+a octave que nos de un vector consecutivo, así no escribimos tanto.
+
+La sintaxis es: ``inicio:paso:fin``. Prueben estos ejemplos:
+
+```
+1:3     # Resultado: [1 2 3]
+1:10    # Resultado: del 1 al 10
+1:2:6   # Resultado: [1 3 5]
+1:0.5:3 # Resultado: [1 1.5 2 2.5 3]
+3:-1:1  # Resultado: [3 2 1]
+```
+
+Por lo tanto, podemos escribir el ejemplo anterior como
+
+```
+# A(4:-1:1, 1:3)
+```
+
+Para obtener **todas** las filas o columnas, no es necesario poner ``1:3``,
+basta con poner ``:`` y Octave va a interpretar que queremos todas las filas
+o columnas. El ejemplo anterior es mejor así:
+
+```
+# A(4:-1:1, :)
+```
+
+Por otro lado, todas las matrices empiezan por el elemento ``1``, eso es claro,
+pero es interesante que el último elemento se llama ``end``. Eso permite
+independizarnos de la cantidad de elementos de la matriz. Por ejemplo,
+en el caso anterior quedaría:
+
+```
+# A(end:-1:1, :) # Much clear, so Octave, wow
+```
+
+Pero también podemos hacer cosas como:
+
+```
+A(1, :)         # La primer fila
+A(end, :)       # La última fila
+A(end-1, :)     # La ante última fila
+A(end-2:end, :) # Las tres últimas filas
+A(:, end-1:end) # Las dos últimas columnas
+```
+
+### Selección usando un único indice
+
+Por si fuera poco, las matrices también se pueden leer con un único indice,
+como si todas las columnas se apilasen una abajo de otra.
+Por ello, ``A(1)`` es 17, ``A(3)`` es
+85, ``A(4)`` es 44, ``A(5)`` es 11 y así. Haciendo ``A(:)`` puede verse cómo
+la matriz se convirtió en un vector columna.
+
+
+### Filtrado
+Tambien se pueden hacer cosas locas como esta:
+
+```
+A(A>50)
+```
+
+Eso devuelte todos los elementos de A que cumplen la condición de ser mayores
+a 50. Este comportamiento se llama "list comprehension" y está muy piola.
+Se puede poner básicamente cualquier función de selección ahí adentro y anda
+pero eso no lo vamos a explocar porque es medio un bardo, pero está en internet.
+
 {% include links.html %}
