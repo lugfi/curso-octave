@@ -1,4 +1,4 @@
-## Copyright (C) 2018 ferna
+## Copyright (C) 2018 Fernando Danko
 ## 
 ## This program is free software: you can redistribute it and/or modify it
 ## under the terms of the GNU General Public License as published by
@@ -14,7 +14,7 @@
 ## along with this program.  If not, see
 ## <https://www.gnu.org/licenses/>.
 ##
-## Author: ferna <ferna@DESKTOP-6ITLPEC>
+## Author: Fernando Danko <fdanko@fi.uba.ar>
 ## Created: 2018-08-24
 
 clear all;
