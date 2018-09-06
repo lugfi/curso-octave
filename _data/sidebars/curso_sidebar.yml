@@ -106,10 +106,6 @@ entries:
     - title: Ajuste No Lineal
       url: /curso_ajuste_no_lineal.html
       output: web, pdf
-
-    - title: Regularización
-      url: /curso_ajuste_regularizacion.html
-      output: web, pdf
       
   - title: Ecuaciones Diferenciales
     output: web, pdf
