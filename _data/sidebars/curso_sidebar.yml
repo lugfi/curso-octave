@@ -93,10 +93,6 @@ entries:
     - title: (Aplicación) Regresión
       url: /curso_regresion_lineal.html
       output: web, pdf
-      
-    - title: Ecuaciones No Lineales
-      url: /curso_ecuaciones_no_lineales.html
-      output: web, pdf
     
   - title: Ajuste
     output: web, pdf

@@ -23,7 +23,7 @@ En caso que la matriz $$A$$ sea no inversible, el sistema puede presentar
 una, ninguna, o infinitas soluciones.
 
 ### Compatibilidad de un sistema
-Un sistema es compatible si solo si $$\rg(A) = \rg([A|b]$$, donde $$[A|b]$$
+Un sistema es compatible si solo si $$\rg(A) = \rg([A|b])$$, donde $$[A|b]$$
 es una matriz por bloques formada por $$A$$ y $$b$$ como columnas.
 
 ### Soluciones de un sistema compatible
@@ -31,7 +31,7 @@ Dado el sistema $$A x = b$$ se llama sistema homogéneo asociado al sistema dado
 por $$A x_h = 0$$. Este último siempre es compatible (por lo dicho anteriormente)
 y es sencillo de resolver.
 Todos los vectores que cumplen $$A x_h = 0$$ forman el subespacio nulo de $$A$$
-o $$Nul(A)$$. En dicho espacio se pueden hallar un conjunto de $$k=n-\rg(A)$$
+o $$\nul A$$. En dicho espacio se pueden hallar un conjunto de $$k=n-\rg(A)$$
 vectores linealmente independientes, llamemoslos $$\{v_1, \cdots, v_k \}$$.
 
 Se cumple que **todos** los vectores $$x_h$$ que cumplen $$A x_h = 0$$ son
@@ -41,7 +41,7 @@ $$\alpha_1,\cdots,\alpha_k \in \CC$$.
 Conocida una solución particular del sistema no homogéneo, es decir, un
 vector $$x_p$$ tal que $$A x_p = b$$, **todas** las soluciones del sistema
 pueden obtenerse de la forma $$x = x_p + \alpha_1 v_1 + \cdots + \alpha_k v_k$$,
-es decir, $$x = x_p + \nul(A)$$.
+es decir, $$x = x_p + \nul A$$.
 
 ## Resolución de Sistemas con Octave
 Para el caso de sistemas compatibles con solución única, la inversa
@@ -114,5 +114,50 @@ c = [-21.69    32.35   -26.52  -123.255] ;
 ```
 
 **Ej 2c)** Combinando los ejericios **2a** y **2b**
+
+
+## Resolviendo sistemas incompatibles
+Respecto a la operación ``A\b`` sabemos que cuando el sistema posee
+infinitas soluciones, solamente devuelve una. Otra cosa más extraña es que **funciona aún cuando
+el sistema no posee solución**. En realidad, al hacer ``A\b`` estamos obteniendo la "el vector $$x$$ que da el valor más cercano a 
+$$b$$" (si hay infinitos, devuelve el de norma mínima).
+
+Es decir, para aquellos que hayan cursado Álgebra II, digamos que utiliza
+la misma idea que la pseudo-inversa de Moore-Penrose. Esta última se puede
+obtener utilizando el comando pinv(A).
+
+Hacer ``x=A\b`` es equivalente en todos los casos hacer ​``x=pinv(A)*b​``, salvo porque
+la primera forma es más óptima y numéricamente más estable.
+
+
+### Ejercicios
+Resolver el sistema $$Ax=b$$ por cuadrados mínimos.
+
+```
+A = [
+   1.05773   1.00000
+   7.81927   1.00000
+   5.01974   1.00000
+   7.29487   1.00000
+   0.51030   1.00000
+   7.43173   1.00000
+   7.39254   1.00000
+   6.43960   1.00000
+   9.37278   1.00000
+   2.81059   1.00000
+];
+
+b = [
+    4.6891
+   24.9399
+   16.6092
+   22.9799
+    3.5419
+   23.3990
+   23.5619
+   20.1535
+   28.5392
+    8.8841];
+```
 
 {% include links.html %}
