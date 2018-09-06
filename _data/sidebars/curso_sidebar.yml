@@ -23,13 +23,59 @@ entries:
       url: /curso_gui.html
       output: web, pdf
     
-    - title: Variables, Vectores y Matrices
+    - title: Variables
+      url: /curso_variables.html
+      output: web, pdf
+      
+    - title: Vectores y Matrices
       url: /curso_matrices.html
       output: web, pdf
+    
+    - title: Scripts
+      url: /curso_scripts.html
+      output: web, pdf
+    
+    - title: Bucles y Lógica
+      url: /curso_bucles.html
+      output: web, pdf
+    
+      subfolders:
+      - title: Funciones
+        output: web, pdf
+        subfolderitems:
+
+        - title: Funciones
+          url: /curso_funciones.html
+          output: web, pdf
+          
+        - title: Documentación
+          url: /curso_funciones_doc.html
+          output: web, pdf
+          
+        - title: Testing
+          url: /curso_funciones_testing.html
+          output: web, pdf
       
     - title: Gráficos
       url: /curso_plots_inicial.html
       output: web, pdf
+    
+      subfolders:
+      - title: Ejercicios de tarea
+        output: web, pdf
+        subfolderitems:
+
+        - title: Introducción
+          url: /curso_ej1_intro.html
+          output: web, pdf
+          
+        - title: Matriz definida positiva
+          url: /curso_ej1_definida_positiva.html
+          output: web, pdf
+          
+        - title: Varianza Muestral
+          url: /curso_ej1_varianza_muestral.html
+          output: web, pdf
       
   - title: Sistemas de Ecuaciones
     output: web, pdf
