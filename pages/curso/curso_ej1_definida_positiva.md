@@ -25,21 +25,9 @@ de $$A$$.
 
 **Ej 1** Dada la matriz $$A = \mtx{1 & 3 & -2\\ 3 & 0 & -1 \\ -2 & -1 & 5}$$
 halle los menores $$M_1$$, $$M_2$$ y $$M_3$$ usando el comando ``det()``
-y submatrices (usando notación de rangos). Generalice para $$M_k$$, con $$k\le n$$.
+y submatrices (usando notación de rangos).
 
-**Ej 2** Escriba una función ``obtener_menor(A, k)`` que obtenga el
-k-ésimo menor de $$A$$, $$M_k$$.
+**Ej 2** Multiplique dichos menores para verificar si $$A$$ es definida positiva.
 
-**Ej 3** Utilice un bucle para obtener los tres menores de A, y determine
-si es definida positiva o no.
+**Ej 3** Generalice para $$M_k$$, con $$k\le n$$.
 
-**Ej 4** Escriba una funcion ``es_defida_positiva(A)`` que devuelva ``1``
-si la matriz ``A`` pasada como parámetro es definida positiva
-o ``0`` en otro caso.
-
-**Ej 5** Si no lo hizo aún, agregue validaciones, documentación y
-tests a las funciones anteriormente implementadas (recuerde que Sylvester
-pide que las matrices sean simétricas).
-
-
-{% include links.html %}

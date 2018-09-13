@@ -56,6 +56,4 @@ variables viejas y se cierren los gráficos abiertos. El comando
 ``clc`` elimina lo que haya en la consola.
 
 
-
-
 {% include links.html %}

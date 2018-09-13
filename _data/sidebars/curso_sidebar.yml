@@ -34,27 +34,6 @@ entries:
     - title: Scripts
       url: /curso_scripts.html
       output: web, pdf
-    
-    - title: Bucles y Lógica
-      url: /curso_bucles.html
-      output: web, pdf
-    
-      subfolders:
-      - title: Funciones
-        output: web, pdf
-        subfolderitems:
-
-        - title: Funciones
-          url: /curso_funciones.html
-          output: web, pdf
-          
-        - title: Documentación
-          url: /curso_funciones_doc.html
-          output: web, pdf
-          
-        - title: Testing
-          url: /curso_funciones_testing.html
-          output: web, pdf
       
     - title: Gráficos
       url: /curso_plots_inicial.html
@@ -107,6 +86,31 @@ entries:
       url: /curso_ajuste_no_lineal.html
       output: web, pdf
       
+  - title: Bucles y Lógica
+    output: web, pdf
+    folderitems:
+    
+      - title: Bucles
+        url: /curso_bucles.html
+        output: web, pdf
+    
+        subfolders:
+        - title: Funciones
+          output: web, pdf
+          subfolderitems:
+
+          - title: Definición de Funciones
+            url: /curso_funciones.html
+            output: web, pdf
+          
+          - title: Documentación
+            url: /curso_funciones_doc.html
+            output: web, pdf
+          
+          - title: Testing
+            url: /curso_funciones_testing.html
+            output: web, pdf
+          
   - title: Ecuaciones Diferenciales
     output: web, pdf
     folderitems:
